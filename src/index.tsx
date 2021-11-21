@@ -2,7 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import bridge from "@vkontakte/vk-bridge";
 import reportWebVitals from './reportWebVitals';
+import "@vkontakte/vkui/dist/vkui.css";
+
+// Init VK  Mini App
+bridge.send("VKWebAppInit");
 
 ReactDOM.render(
   <React.StrictMode>
